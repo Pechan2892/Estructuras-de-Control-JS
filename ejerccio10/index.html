@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio de Edades por Turno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="logo">Promedio de Edades</div>
+        <ul class="nav-links">
+            <li><a href="#manana">Turno Mañana</a></li>
+            <li><a href="#tarde">Turno Tarde</a></li>
+            <li><a href="#noche">Turno Noche</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 id="manana">Promedio de Edades de Estudiantes por Turno</h1>
+
+        <!-- Sección del Turno Mañana -->
+        <h2>Turno Mañana (5 estudiantes)</h2>
+        <form id="ageFormMorning">
+            <div id="morning"></div>
+        </form>
+
+        <!-- Sección del Turno Tarde -->
+        <h2 id="tarde">Turno Tarde (6 estudiantes)</h2>
+        <form id="ageFormAfternoon">
+            <div id="afternoon"></div>
+        </form>
+
+        <!-- Sección del Turno Noche -->
+        <h2 id="noche">Turno Noche (11 estudiantes)</h2>
+        <form id="ageFormNight">
+            <div id="night"></div>
+        </form>
+
+        <button type="submit" form="ageFormMorning">Calcular Promedios</button>
+
+        <!-- Etiquetas para mostrar los promedios -->
+        <label for="promedioMañana">Promedio Turno Mañana:</label>
+        <p id="promedioMañana"></p>
+
+        <label for="promedioTarde">Promedio Turno Tarde:</label>
+        <p id="promedioTarde"></p>
+
+        <label for="promedioNoche">Promedio Turno Noche:</label>
+        <p id="promedioNoche"></p>
+
+        <label for="turnoMayor">Turno con Mayor Promedio:</label>
+        <p id="turnoMayor"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
